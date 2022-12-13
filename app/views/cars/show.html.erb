@@ -8,3 +8,8 @@
 
   <%= button_to "Destroy this car", @car, method: :delete %>
 </div>
+
+<%= turbo_frame_tag @car do %>
+  Content for our article!
+  <%= link_to "Edit Car", edit_car_path(@car) %>
+<% end %>

@@ -8,3 +8,8 @@
   <%= link_to "Show this car", @car %> |
   <%= link_to "Back to cars", cars_path %>
 </div>
+
+<%= turbo_frame_tag @car do %>
+  Form to edit the article
+  <%= link_to "Return to Car", @car %>
+<% end %>
